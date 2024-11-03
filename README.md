@@ -2,6 +2,9 @@
 
 Este projeto é uma extensão para o Google Chrome que permite gerenciar tarefas e lembretes com notificações. A extensão utiliza React, TypeScript e Vite para uma experiência de desenvolvimento moderna e eficiente.
 
+![image](https://github.com/user-attachments/assets/4d15415c-3756-4dd2-8d04-a42852b9bfaf)
+
+
 ## Funcionalidades
 
 - Adicionar, editar e excluir tarefas.
