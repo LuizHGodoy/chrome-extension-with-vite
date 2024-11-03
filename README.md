@@ -1,50 +1,46 @@
-# React + TypeScript + Vite
+# Lembrete de Tarefas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma extensão para o Google Chrome que permite gerenciar tarefas e lembretes com notificações. A extensão utiliza React, TypeScript e Vite para uma experiência de desenvolvimento moderna e eficiente.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Adicionar, editar e excluir tarefas.
+- Configurar lembretes com notificações.
+- Interface amigável e responsiva.
 
-## Expanding the ESLint configuration
+## Pré-requisitos
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Antes de começar, você precisa ter o Node.js e o npm instalados em sua máquina. Você pode baixar o Node.js [aqui](https://nodejs.org/).
 
-- Configure the top-level `parserOptions` property like this:
+## Passo a Passo para Rodar o Projeto
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Clone o repositório para sua máquina local usando o comando:  
+   `git clone https://github.com/LuizHGodoy/chrome-extension-with-vite.git`  
+   
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Navegue até o diretório do projeto:  
+   `cd chrome-extension-with-vite`
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+3. Instale as dependências do projeto:  
+   `npm install`
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+4. Para rodar o projeto em modo de desenvolvimento, use o comando:  
+   `npm run dev`
+
+5. Para construir o projeto para produção, execute:  
+   `npm run build`
+
+6. Após a construção, você pode carregar a extensão no Chrome:  
+   - Abra o Chrome e vá para `chrome://extensions/`.  
+   - Ative o "Modo do desenvolvedor" no canto superior direito.  
+   - Clique em "Carregar sem compactação" e selecione a pasta `dist` do seu projeto.
+
+7. Agora você pode usar a extensão "Lembrete de Tarefas" no seu navegador!
+
+## Contribuição
+
+Sinta-se à vontade para contribuir com melhorias ou correções. Faça um fork do repositório, crie uma nova branch e envie um pull request.
+
+## Licença
+
+Este projeto está licenciado sob a MIT License. Veja o arquivo LICENSE para mais detalhes.
