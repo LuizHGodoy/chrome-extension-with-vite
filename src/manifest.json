@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Lembrete de Tarefas",
+  "version": "2.0.9",
+  "description": "Extensão para gerenciar tarefas e lembretes com notificações",
+  "permissions": ["storage", "notifications", "alarms"],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Gerenciador de Tarefas",
+    "default_icon": {
+      "16": "icon-16.png",
+      "48": "icon-48.png",
+      "128": "icon-128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  }
+}
